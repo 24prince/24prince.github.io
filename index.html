@@ -1,59 +1,123 @@
+<!DOCTYPE html>
 <html>
-<div style="background-image:url('images/f.jpg');">
-<title> Artificial Intelligence</title>
-<center>
-    <img src="images/b.jpg" width="600" height="70">
-</center>
-
-<center>
-    <h2> What is Artificial Intelligence?</h2>
-    Artificial intelligence (AI) is wide-ranging branch of computer science concerned with building smart machines
-    capable of performing tasks that typically require human intelligence.
-    AI is an interdisciplinary science with multiple approaches, but advancements in machine learning and deep
-    learning are creating a paradigm shift in virtually every sector of the tech industry.<br>
-    <img src="images/artificial-intelligence-3.jpg"><br>
-
-    <hr width="700">
-    <h3> How is AI used?</h3>
-    <h4>Narrow AI:</h4>
-    Sometimes referred to as "Weak AI," this kind of artificial intelligence operates within a limited context and is a
-    simulation of human intelligence.<br>
-    Narrow AI is often focused on performing a single task extremely well and while these machines may seem intelligent,
-    they are operating under far more constraints and limitations than even the most basic human intelligence. <br>
-
-    <h4>Artificial General Intelligence (AGI):</h4> AGI, sometimes referred to as "Strong AI," is the kind of artificial
-    intelligence we see in the movies,like the robots from Westworld or Data from Star Trek: The Next
-    Generation. AGI is a machine with general intelligence and, much like a human being, it can apply that intelligence to solve any
-    problem.<br>
-    <HR WIDTH="1000">
-        <img src="images/a.jpg">
-    <hr width="1000">
-    <h4>Some examples of Artificial Intelligence</h4>
-    Smart assistants (like Siri and Alexa)<br>
-    Disease mapping and prediction tools<br>
-    Manufacturing and drone robots<br>
-    Optimized, personalized healthcare treatment recommendations<br>
-    Conversational bots for marketing and customer service<br>
-    Robo-advisors for stock trading<br>
-    Spam filters on email<br>
-    Social media monitoring tools for dangerous content or false news<br>
-    Song or TV show recommendations from Spotify and Netflix<br>
-
- <video autoplay loop muted playsinline src="images/video.mp4" width="700" height="700"></video>
-  
-
-
-</center>
-    </dev>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168731781-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-168731781-1');
-</script>
-
-    <script data-ad-client="ca-pub-4093712014535888" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <head>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .header{
+                padding:10px;   
+                text-align: center;
+            }
+            a{
+                text-decoration: none;                
+                font-size:20px;    
+                color:crimson;                        
+            }
+            .link{
+                padding-left:10px;
+                padding-top:6px;
+                float:left;
+                padding-right:10px;                
+            }
+            .link:hover{
+                background-color: blanchedalmond;
+                border-radius: 10px;                
+                color:black;
+            }
+            .column{
+                float:left;
+            }
+            .list{
+                font-style:40px;
+                border:1px soid black;
+                background-color:aqua;
+                padding:5px;
+                margin-top:10px;
+                text-align: center;
+                
+            }
+            .nav{
+                width:100%; height:30px;
+            }
+            #side
+            {
+                width:20%; 
+                height:400px;
+            }
+            #firsth1{
+                font-size:40px; 
+                text-align:center; 
+                padding:10px;
+            }
+            #rightside
+            {
+                width:80%; 
+                height:400px;
+            }
+            #content
+            {
+                border-radius:20px; 
+                width:90%; 
+                height:150px; 
+                margin-left:30px;
+            }
+            @media (max-width:600px)
+            {
+                .nav{
+                    width:100%;
+                }
+                .link{
+                    width:25%;
+                    font-size:10px;
+                    height:30px;
+                    text-align: center;
+                }
+                .l{
+                    font-size: 10px;
+                }
+                #side
+                {
+                    width:100%;
+                    height:350px;
+                }
+                #rightside
+                {
+                    width:100%;
+                }
+                #content
+                {
+                    margin-left:10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header" style="background-color:skyblue; color:black; width:100%; height:150px;">
+            <h1>My Responsive Website</h1>
+            <h4>By Prince Giri</h4>
+        </div>
+        <div class="nav" style="background-color: aliceblue;">
+            <div class="link" id=first><a href="" class="l">Home</a></div>
+            <div class="link"><a href="" class="l" >Main Content</a></div>
+            <div class="link"><a href="" class="l">About us</a></div>
+            <div class="link"><a href="" class="l">Contact Us</a></div>
+        </div>
+        <div class="row">
+            <div class="column" id=side style="background-color: #bbb;;">
+                <h1  id="firsth1">Menu</h1><br>
+                <div class="list">Cricket</div>
+                <div class="list">Football</div>
+                <div class="list">Tenis</div>
+                <div class="list">Badminton</div>
+            </div>
+            <div class="column" id="rightside" style="background-color: #eee;">
+                <h1 style="font-size:40px; padding:10px;">Content</h1>
+                <div id="content" style="background-color:turquoise; ">
+                    <p style="font-size:30px; padding:15px;">Write Your Content Here.....</p>
+                </div>
+                <p style="color:blue; padding-left:50px;">Note:- You can write your content in above box...</p>
+            </div>
+        </div>
+    </body>
 </html>
